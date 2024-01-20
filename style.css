@@ -1,0 +1,119 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(74, 74, 74);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button:active {
+    width: 44px;
+}
+
+p {
+    text-align: right;
+}
+
+.btn:hover {
+    background-color: rgba(245, 13, 13, 0.575);
+}
+
+.btn:active {
+    width: 95px;
+}
+
+.operator:hover {
+    color: black;
+    background-color: rgb(16, 223, 223);
+}
+
+.equal:hover {
+    color: black;
+    background-color: rgb(14, 236, 14);
+}
+
+.key:hover,
+.point:hover {
+    color: black;
+    background-color: rgb(169, 166, 166);
+}
+
+.cal-board {
+    height: fit-content;
+    width: fit-content;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: rgb(10, 10, 10) 10px solid;
+    border-radius: 10px;
+}
+
+.display {
+    height: 60px;
+    width: 200px;
+    background-color: rgb(86, 85, 85);
+    border-radius: 10px;
+}
+
+.keys {
+    width: 200px;
+    height: 300px;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.row {
+
+    display: flex;
+    justify-content: space-between;
+    flex: auto;
+
+}
+
+.key,
+.point,
+.equal,
+.operator {
+    width: 45px;
+    color: #ffffff;
+    background-color: rgb(86, 85, 85);
+    border: none;
+    border-radius: 100px 100px;
+
+}
+
+.btn {
+    width: 90px;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(86, 85, 85);
+}
+
+.currentScreen {
+    text-align: end;
+    color: white;
+    font: 700;
+
+}
+
+.lastScreen {
+    display: none;
+    color: aliceblue;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font: italic 16px;
+    color: #ffffff;
+}

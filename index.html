@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +9,10 @@
   </head>
   <body>
     <div class="cal-board">
-      <div class="display"><p style="color: white">0</p></div>
+      <div class="screen">
+        <div class="lastScreen"></div>
+        <div class="display currentScreen"><p style="color: white">0</p></div>
+      </div>
       <div class="keys">
         <div class="row-1 row">
           <button class="clear btn">AC</button>
@@ -39,7 +43,7 @@
         <div class="row-5 row">
           <button class="key">0</button>
           <button class="point">.</button>
-          <button class="operator equal">=</button>
+          <button class="equal" id="equal">=</button>
           <button class="operator">+</button>
         </div>
       </div>
