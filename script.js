@@ -115,16 +115,3 @@ function evaluate() {
   lastScreen.textContent = `${firstOperand} ${currentOperation} ${secondOperand}`;
   currentOperation = null;
 }
-function evaluate() {
-  if (currentOperation === null || shouldResetScreen) return;
-  if (currentOperation === "÷" && currentOperationScreen.textContent === "0") {
-    alert("You can't divide by 0!");
-    return;
-  }
-  secondOperand = currentOperationScreen.textContent;
-  currentOperationScreen.textContent = roundResult(
-    operate(currentOperation, firstOperand, secondOperand)
-  );
-  lastOperationScreen.textContent = `${firstOperand} ${currentOperation} ${secondOperand} =`;
-  currentOperation = null;
-}
